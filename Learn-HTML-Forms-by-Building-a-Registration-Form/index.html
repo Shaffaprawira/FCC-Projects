@@ -5,6 +5,7 @@
     <title>Registration Form</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
     <h1>Registration Form</h1>
     <p>Please fill out this form with the required information</p>
@@ -16,14 +17,15 @@
         <label for="new-password">Create a New Password: <input type="password" name="" id="new-password" required pattern="[a-z0-5]{8,}"></label>
     </fieldset>
     <fieldset>
-        <label for=""></label>
-        <label for=""></label>
-        <label for=""></label>
+        <label for="personal-account"><input type="radio" name="account-type" id="personal-account"> Personal Account</label>
+        <label for="business-account"><input type="radio" name="account-type" id="business-account"> Business Account</label>
+        <label for="terms-and-conditions"><input type="checkbox" name="" id="terms-and-conditions" required> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a></label>
     </fieldset>
     <fieldset>
 
     </fieldset>
     <input type="submit" value="Submit">
-</form>
+    </form>
   </body>
+  
 </html>
