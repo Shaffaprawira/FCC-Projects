@@ -8,20 +8,25 @@
 </head>
 <body>
     <div class="container-1">
-        <h1 id="title">FreeCodeCamp Survey Form</h1>
-        <p id="description">
-            Thank you for taking the time to help us improve the platform
-        </p>
+        <div class="header">
+            <h1 id="title">
+                FreeCodeCamp Survey Form
+            </h1>
+            <p id="description">
+                Thank you for taking the time to help us improve the platform
+            </p>
+        </div>
+
         <div class="container-2">
             <form action="" id="survey-form">
-                <label for="name">Name <br>
-                    <input type="text" id="name" placeholder="Enter your name">
+                <label for="name" id="name-label">Name <br>
+                    <input type="text" id="name" placeholder="Enter your name" required>
                 </label>
-                <label for="email">Email <br>
-                    <input type="email" id="email" placeholder="Enter your Email">
+                <label for="email" id="email-label">Email <br>
+                    <input type="email" id="email" placeholder="Enter your Email" required>
                 </label>
-                <label for="number">Age (optional) <br>
-                    <input type="number" name="" id="number" minlength="5" maxlength="15" placeholder="Age">
+                <label for="number" id="number-label">Age (optional) <br>
+                    <input type="number" name="" id="number" min="5" max="15" placeholder="Age">
                 </label>
                 <label for="dropdown-role">Which option best describes your current role? <br>
                     <select name="" id="dropdown-role">
@@ -31,9 +36,9 @@
                     </select>
                 </label>
                 <label for="option">Would you recommend freeCodeCamp to a friend? <br>
-                    <input type="radio" name="radio" id="">Definitely <br>
-                    <input type="radio" name="radio" id="">Maybe <br>
-                    <input type="radio" name="radio" id="">Not sure <br>
+                    <input type="radio" name="radio" id="" value="0">Definitely <br>
+                    <input type="radio" name="radio" id="" value="1">Maybe <br>
+                    <input type="radio" name="radio" id="" value="2">Not sure <br>
                 </label>
                 <label for="dropdown-feature">What is your favorite feature of freeCodeCamp? <br>
                     <select name="" id="dropdown" aria-placeholder="Select an option">
