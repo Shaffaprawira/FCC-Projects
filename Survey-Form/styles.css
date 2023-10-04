@@ -33,7 +33,7 @@
     background-color: hsl(220, 74%, 36%);
     margin: 0 auto;
     border: 3px solid hsl(0, 86%, 37%);
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 
 label {
